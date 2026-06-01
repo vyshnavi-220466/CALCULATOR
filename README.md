@@ -37,3 +37,8 @@ This project was developed to strengthen JavaScript programming skills by implem
 - User Interface Design
 - Arithmetic Logic Implementation
 - Responsive Web Design
+
+##SCREENSHOT
+#Homepage
+
+![homepage](images/calculator.jpeg)
