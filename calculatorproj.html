@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculatorproj.css">
+</head>
+<body class="body">
+    <p>calculator</p>
+    <p class="para"></p>
+    <p>
+    <button onclick=fun('1') class="1" id="nums">1</button>
+    <button onclick=fun('2') class="2" id="nums">2</button>
+    <button onclick=fun('3') class="3" id="nums">3</button>
+    <button onclick=fun('+') class="+" id="symb">+</button>
+    </p>
+    <p>
+    <button onclick=fun('4') class="4" id="nums">4</button>
+    <button onclick=fun('5') class="5" id="nums">5</button>
+    <button onclick=fun('6') class="6" id="nums">6</button>
+    <button onclick=fun('-') class="-" id="symb">-</button>
+    </p>
+    <p>
+    <button onclick=fun('7') class="7" id="nums">7</button>
+    <button onclick=fun('8') class="8" id="nums">8</button>
+    <button onclick=fun('9') class="9" id="nums">9</button>
+    <button onclick=fun('*') class="*" id="symb">*</button>
+    </p>
+    <button onclick=fun('0') class="0" id="nums">0</button>
+    <button onclick=fun('.') class="." id="nums">.</button>
+    <button onclick=fun('=') class="=" id="nums">=</button>
+    <button onclick=fun('/') class="/" id="symb">/</button>
+    <p>
+    <button onclick=fun('clear') class="clear">clear</button>
+    </p>
+    <script>
+        a=5;
+        console.log(`a is ${a}`);
+        let calculation='';
+        function fun(para){
+             if(para==='clear'){
+                calculation=' ';
+                console.log('cleared');
+                document.querySelector('.para').innerHTML=calculation;
+                
+            }
+            else if(para==='='){
+                console.log(eval(calculation));
+                document.querySelector('.para').innerHTML=(eval(calculation))
+                }
+             
+             else if(para!='='){
+            calculation+=para;
+            console.log(calculation);
+            document.querySelector('.para').innerHTML=calculation
+            
+             }
+             
+             
+
+            
+            
+
+        }
+    </script>
+</body>
+</html>
